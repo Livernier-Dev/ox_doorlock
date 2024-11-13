@@ -1,3 +1,6 @@
+-- NC PROTECT+
+shared_scripts { '@nc_PROTECT+/exports/protected.lua', '@nc_PROTECT+/exports/sh.lua' }
+
 --[[ FX Information ]]--
 fx_version   'cerulean'
 use_experimental_fxv2_oal 'yes'
@@ -6,7 +9,7 @@ game         'gta5'
 
 --[[ Resource Information ]]--
 name         'ox_doorlock'
-version      '1.18.0'
+version      '1.16.1'
 license      'GPL-3.0-or-later'
 author       'Overextended'
 repository   'https://github.com/overextended/ox_doorlock'
@@ -24,6 +27,8 @@ client_scripts {
 
 server_scripts {
 	'@oxmysql/lib/MySQL.lua',
+	'server/convert.lua',
+	'server/framework/*.lua',
 	'server/main.lua',
 }
 
